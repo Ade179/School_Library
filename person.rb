@@ -1,4 +1,5 @@
-class Person
+require './nameable'
+class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id
 
@@ -11,6 +12,10 @@ class Person
 
   def can_use_service?
     of_age? || @parent_permission
+  end
+
+  def correct_name
+    @name
   end
 
   private
