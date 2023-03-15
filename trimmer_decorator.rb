@@ -4,4 +4,3 @@ class TrimmerDecorator < BaseDecorator
     @nameable.correct_name.strip.slice(0, 10)
   end
 end
-
