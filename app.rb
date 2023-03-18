@@ -64,7 +64,7 @@ class App
     print 'Do you have parent permission? [Y/N]: '
     parent_permission = gets.chomp.downcase == 'y'
 
-    print 'What is the student\'s classroom?: '
+
     classroom_label = gets.chomp
     classroom = Classroom.new(classroom_label)
 
