@@ -64,6 +64,7 @@ class App
     print 'Do you have parent permission? [Y/N]: '
     parent_permission = gets.chomp.downcase == 'y'
 
+    print 'What is the student\'s classroom?: '
     classroom_label = gets.chomp
     classroom = Classroom.new(classroom_label)
 
@@ -83,7 +84,7 @@ class App
     specialization = gets.chomp
 
     @people << Teacher.new(specialization, age, name)
-    puts '*** Person created successfully ***'
+    puts '*** Teacher created successfully ***'
   end
 
   # create a book
@@ -142,4 +143,4 @@ class App
 end
 
 bola = App.new
-bola.create_person()
+bola.create_rental

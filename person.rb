@@ -1,17 +1,20 @@
-require './nameable'
-class Person < Nameable
-  attr_accessor :name, :age, :rentals
-  attr_reader :id
+require_relative 'nameable'
+require_relative 'base_decorator'
 
-  def initializer(age, name = 'unknown', parent_permission: 'true')
-    @id = rand(1000)
-    @name = name
+class Person < Nameable
+  attr_accessor :name, :age
+  attr_reader :id, :rentals
+
+  def initialize(age, name = 'Unknown', parent_permission: true)
+    super()
+    @id = Random.rand(1..1000)
     @age = age
+    @name = name
     @parent_permission = parent_permission
     @rentals = []
   end
 
-  def can_use_service?
+  def can_use_services?
     of_age? || @parent_permission
   end
 
