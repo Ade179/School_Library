@@ -6,6 +6,7 @@ class Main
     start = StartApp.new
     start.menu_options
   end
+
   def close_app
     EndApp.new
   end
