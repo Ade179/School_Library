@@ -77,6 +77,11 @@ Clone this repository to your desired folder:
 - GitHub: [@githubhandle](https://github.com/Ade179)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/adejuwon-adesanya-237b54239/)
 
+👤 **Abel Seifu**
+
+- GitHub: [@githubhandle](https://github.com/Abe1able)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/Abel-Seifu/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
