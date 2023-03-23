@@ -1,0 +1,50 @@
+[
+  {
+    "type": "Student",
+    "name": "johnson",
+    "age": 21,
+    "parent_permission": true
+  },
+  {
+    "type": "Teacher",
+    "specialization": "philosophy",
+    "name": "hh",
+    "age": 22,
+    "parent_permission": true
+  },
+  {
+    "type": "Teacher",
+    "specialization": "philosphy",
+    "name": "abel",
+    "age": 22,
+    "parent_permission": true
+  },
+  {
+    "type": "Teacher",
+    "specialization": "ww",
+    "name": "ww",
+    "age": 22,
+    "parent_permission": true
+  },
+  {
+    "type": "Teacher",
+    "specialization": "w",
+    "name": "ww",
+    "age": 22,
+    "parent_permission": true
+  },
+  {
+    "type": "Teacher",
+    "specialization": "ww",
+    "name": "ww",
+    "age": 22,
+    "parent_permission": true
+  },
+  {
+    "type": "Teacher",
+    "specialization": "ww",
+    "name": "rr",
+    "age": 22,
+    "parent_permission": true
+  }
+]

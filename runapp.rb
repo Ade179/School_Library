@@ -1,8 +1,9 @@
 require_relative 'app'
-
+require_relative 'book'
 class StartApp
   def initialize
     @app = App.new
+    @app.load_data
     @option = 0
   end
 
