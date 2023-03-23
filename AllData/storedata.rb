@@ -1,4 +1,3 @@
-# rubocop:disable Style/NumericPredicate
 require_relative '../book'
 
 require_relative '../person'
@@ -40,7 +39,7 @@ def load_books
 
   p 'Available books:'
 
-  @books.each { |b| p "Book title: #{b.title}, Author: #{b.author}" } unless @books.size.zero?
+  @books.each { |b| p "Book title: #{b.title}, Author: #{b.author}" } unless @books.empty?
 end
 
 def save_book(title, author)
@@ -56,7 +55,7 @@ def save_book(title, author)
 
   file = File.open('./AllData/books.json')
 
-  if file.size.zero?
+  if file.empty?
 
     book = [obj]
 
@@ -134,7 +133,7 @@ def save_student(name, age, parent_permission)
 
   file = File.open('./AllData/people.json')
 
-  if file.size.zero?
+  if file.empty?
 
     student = [obj]
 
@@ -237,7 +236,7 @@ def save_rental(date, book, person)
 
   file = File.open('./AllData/rentals.json')
 
-  if file.size.zero?
+  if file.empty?
 
     rental = [obj]
 

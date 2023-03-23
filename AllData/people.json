@@ -18,5 +18,19 @@
     "name": "abel",
     "age": 22,
     "parent_permission": true
+  },
+  {
+    "type": "Teacher",
+    "specialization": "ww",
+    "name": "ww",
+    "age": 22,
+    "parent_permission": true
+  },
+  {
+    "type": "Teacher",
+    "specialization": "w",
+    "name": "ww",
+    "age": 22,
+    "parent_permission": true
   }
 ]
