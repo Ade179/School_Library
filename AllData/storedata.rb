@@ -224,3 +224,35 @@ def load_rentals
   end
 end
 
+def save_rental(date, book, person)
+  obj = {
+
+    date: date,
+    book: book.title,
+    person: person.name
+  }
+
+  return unless File.exist?('./AllData/rentals.json')
+
+  file = File.open('./AllData/rentals.json')
+
+  if file.empty?
+
+    rental = [obj]
+
+  else
+
+    rental = JSON.parse(File.read('./AllData/rentals.json'))
+
+    rental << obj
+
+  end
+
+  file.close
+
+  myfile = File.open('./AllData/rentals.json', 'w')
+
+  myfile.write(JSON.pretty_generate(rental))
+
+  myfile.close
+end
