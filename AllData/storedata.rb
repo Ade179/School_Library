@@ -13,7 +13,7 @@ def load_books
 
     file = File.open('./AllData/books.json')
 
-    if file.size.zero?
+    if file.size.zero? # rubocop:disable Style/ZeroLengthPredicate
 
       'Please add  books first if this is your fist time using our app'
 
@@ -133,7 +133,7 @@ def save_student(name, age, parent_permission)
 
   file = File.open('./AllData/people.json')
 
-  if file.empty?
+  if file.size.zero? # rubocop:disable Style/ZeroLengthPredicate
 
     student = [obj]
 
@@ -173,7 +173,7 @@ def save_teacher(name, age, specialization)
 
   file = File.open('./AllData/people.json')
 
-  if file.size.zero?
+  if file.size.zero? # rubocop:disable Style/ZeroLengthPredicate
 
     teacher = [obj]
 
@@ -199,7 +199,7 @@ def load_rentals
 
     file = File.open('./AllData/rentals.json')
 
-    if file.size.zero?
+    if file.size.zero? # rubocop:disable Style/ZeroLengthPredicate
 
       p 'Please add reseve  books first'
 
