@@ -9,6 +9,6 @@ class Classroom
 
   def add_student(student)
     @students << student
-    student.classroom = self if student.classroom != self
+    student.classroom = self unless student.classroom.include?(self)
   end
 end
