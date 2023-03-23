@@ -1,14 +1,15 @@
 [
-    {
-      "type": "student",
-      "name": "machalla",
-      "age": 21,
-      "parent_permission": true
-    },
-    {
-      "type": "Teacher",
-      "name": "Jaybaba",
-      "age": 70,
-      "parent_permission": false
-    }
-  ]
+  {
+    "type": "Student",
+    "name": "johnson",
+    "age": 21,
+    "parent_permission": true
+  },
+  {
+    "type": "Teacher",
+    "specialization": "philosophy",
+    "name": "hh",
+    "age": 22,
+    "parent_permission": true
+  }
+]
