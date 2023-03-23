@@ -13,7 +13,7 @@ def load_books
 
     file = File.open('./AllData/books.json')
 
-    if file.empty?
+    if file.size.zero?
 
       'Please add  books first if this is your fist time using our app'
 
@@ -39,7 +39,7 @@ def load_books
 
   p 'Available books:'
 
-  @books.each { |b| p "Book title: #{b.title}, Author: #{b.author}" } unless @books.empty?
+  @books.each { |b| p "Book title: #{b.title}, Author: #{b.author}" } unless @books.size.zero?
 end
 
 def save_book(title, author)
@@ -55,7 +55,7 @@ def save_book(title, author)
 
   file = File.open('./AllData/books.json')
 
-  if file.empty?
+  if file.size.zero?
 
     book = [obj]
 
@@ -133,7 +133,7 @@ def save_student(name, age, parent_permission)
 
   file = File.open('./AllData/people.json')
 
-  if file.empty?
+  if file.size.zero?
 
     student = [obj]
 
@@ -173,7 +173,7 @@ def save_teacher(name, age, specialization)
 
   file = File.open('./AllData/people.json')
 
-  if file.empty?
+  if file.size.zero?
 
     teacher = [obj]
 
@@ -199,7 +199,7 @@ def load_rentals
 
     file = File.open('./AllData/rentals.json')
 
-    if file.empty?
+    if file.size.zero?
 
       p 'Please add reseve  books first'
 
@@ -236,7 +236,7 @@ def save_rental(date, book, person)
 
   file = File.open('./AllData/rentals.json')
 
-  if file.empty?
+  if file.size.zero?
 
     rental = [obj]
 

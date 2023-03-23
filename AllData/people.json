@@ -11,5 +11,12 @@
     "name": "hh",
     "age": 22,
     "parent_permission": true
+  },
+  {
+    "type": "Teacher",
+    "specialization": "philosphy",
+    "name": "abel",
+    "age": 22,
+    "parent_permission": true
   }
 ]
