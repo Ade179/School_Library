@@ -7,9 +7,16 @@ class Book
     @author = author
     @rentals = []
   end
-end
 
-def add_rental(person, date)
-  rental = Rental.new(date, self, person)
-  @rentals.push(rental)
+  def to_s
+    "Title: \"#{@title}\", Author: #{author}"
+  end
+
+  def to_json(*args)
+    {
+      JSON.create_id => self.class.name,
+      'title' => @title,
+      'author' => @author
+    }.to_json(*args)
+  end
 end

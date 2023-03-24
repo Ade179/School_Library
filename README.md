@@ -4,6 +4,7 @@
 - [📖 OOP-SCHOOL-LIBRARY ](#-vet-clinic-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
+    - [Key Features](#key-features)
   - [ future-feature ](#features)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
@@ -25,6 +26,16 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 > Describe the tech stack and include only the relevant sections that apply to your project.
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[A functionl school library app]**
+- **[has classes and methods for each functionalities separated using the SOLID prnciple]**
+- **[unit-tested]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## future-feature <a name="features"></a>
 ### feature
@@ -117,7 +128,7 @@ I would like to thank Microverse for the resources used to complete this project
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](MIT.md) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
